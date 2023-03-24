@@ -32,7 +32,6 @@ pipeline {
          projectID: '{a062321e-26cb-4e60-b955-5409606b35c2}',
          testFileFormat: '0',
          branch: "${params.branch}",
-          version: 'v12',
          testFilePattern: 'target\\surefire-reports\\junitreports\\TEST-com.qburst.testing.automationcore.testng.BrowserTest.xml'
        }
     }
