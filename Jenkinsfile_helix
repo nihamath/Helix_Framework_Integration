@@ -6,7 +6,7 @@ pipeline {
     parameters {
        
          string(name: 'automationSuite', defaultValue: 'Framework Test Suite', description: 'Automation suite name')
-         int(name: 'automationId', defaultValue: 10, description: 'Automation suite id')
+         string(name: 'automationId', defaultValue: 10, description: 'Automation suite id')
          choice(name: 'TEST_SUITE', choices:['integration_test.xml'], description: 'Test Suite to be executed')
          string(name: 'TargetURL', defaultValue: 'https://google.com', description: 'Target base url for test execution')
     }
