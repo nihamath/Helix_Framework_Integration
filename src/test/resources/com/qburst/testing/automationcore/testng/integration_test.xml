@@ -15,7 +15,7 @@
         <classes>
             <class name="com.qburst.testing.automationcore.testng.BrowserTest">
                 <methods>
-                    <include name="vefifyBrowser"/>
+                    <include name="vefifyBrowser_br67"/>
                 </methods>
             </class>
         </classes>
@@ -25,7 +25,7 @@
         <classes>
             <class name="com.qburst.testing.automationcore.testng.BrowserTest">
                 <methods>
-                    <include name="vefifyBrowser"/>
+                    <include name="vefifyBrowser_br67"/>
                 </methods>
             </class>
         </classes>
