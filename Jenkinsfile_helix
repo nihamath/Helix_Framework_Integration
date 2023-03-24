@@ -26,7 +26,7 @@ pipeline {
 
 
          halm_report automationSuite: "${params.automationSuite}",
-         automationSuiteID: ${params.automationId},
+         automationSuiteID: "${params.automationId}",
          halmConnectionID: '915bc48c-f8a2-491c-b471-2b25cf4781c1',
          projectID: '{a062321e-26cb-4e60-b955-5409606b35c2}',
          testFileFormat: '0',
