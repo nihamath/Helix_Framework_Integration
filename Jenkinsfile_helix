@@ -12,7 +12,7 @@ pipeline {
         stage('run integration test') {
             steps {
 
-                sh "mvn test"
+                bat "mvn test"
             }
         }
 
