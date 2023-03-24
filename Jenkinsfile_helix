@@ -6,13 +6,15 @@ pipeline {
     parameters {
        
          string(name: 'automationSuite', defaultValue: 'Framework Test Suite', description: 'Automation suite name')
+         choice(name: 'TEST_SUITE', choices:['integration_test.xml'], description: 'Test Suite to be executed')
+         string(name: 'TargetURL', defaultValue: 'https://google.com', description: 'Target base url for test execution')
     }
 
     stages {
         stage('run integration test') {
             steps {
 
-                bat "mvn test"
+                bat "mvn test -Dtestng.suitexml=${params.TEST_SUITE} -Dtest.url.base=${params.TargetURL}"
             }
         }
 
