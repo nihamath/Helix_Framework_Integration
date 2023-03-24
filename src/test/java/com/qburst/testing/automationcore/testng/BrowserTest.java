@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class BrowserTest extends BaseTest {
 
     @Test(testName = "Browser Test", description = "Verify the framework is able to open browser")
-    public void vefifyBrowser() {
+    public void vefifyBrowser_br67() {
 
         WebPage webPage = new WebPage(driver);
 
