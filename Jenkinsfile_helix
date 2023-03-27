@@ -23,6 +23,12 @@ pipeline {
     }
 
     post{
+    
+     always {
+
+                testNG reportFilenamePattern: '/testng-results.xml'
+       }
+       
        always {
 
 
