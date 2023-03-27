@@ -24,11 +24,6 @@ pipeline {
 
     post{
     
-     always {
-
-                testNG reportFilenamePattern: '/testng-results.xml'
-       },
-       
        always {
 
 
@@ -41,5 +36,17 @@ pipeline {
          testFilePattern: 'target\\surefire-reports\\junitreports\\TEST-com.qburst.testing.automationcore.testng.BrowserTest.xml'
        }
     }
+    
+    post{
+    
+       always {
+
+ testNG reportFilenamePattern: '/testng-results.xml'
+       }
+    }
+    
+    
+    
+      
 
 }
