@@ -27,7 +27,7 @@ pipeline {
      always {
 
                 testNG reportFilenamePattern: '/testng-results.xml'
-       }
+       },
        
        always {
 
