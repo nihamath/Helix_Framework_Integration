@@ -36,6 +36,12 @@ access_token=$(echo $response | jq -r \'.access_token\')
 echo $access_token
 '''
 
+sh '''curl --location "https://qburst455.sharepoint.com/sites/DemoSiteForJenkins/_api/Web/GetFolderByServerRelativeUrl(\'/sites/DemoSiteForJenkins/Shared%20Documents/Reports\')/files/add(url=\'junitreports.zip\',overwrite=true)" \\
+--header "Authorization: Bearer $access_token" \\
+--header "Accept: application/json;odata=verbose" \\
+--header "Content-Type: application/octet-stream" \\
+--data-binary "@/home/nihamathulla/Downloads/junitreports.zip"
+'''
          
        }
     }
