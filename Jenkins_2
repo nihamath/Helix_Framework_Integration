@@ -35,11 +35,11 @@ sh '''response=$(curl -X POST \\
 access_token=$(echo $response | jq -r \'.access_token\')
 echo $access_token
 
-curl --location "https://qburst455.sharepoint.com/sites/DemoSiteForJenkins/_api/Web/GetFolderByServerRelativeUrl(\'/sites/DemoSiteForJenkins/Shared%20Documents/Reports\')/files/add(url=\'test11.png\',overwrite=true)" \\
+curl --location "https://qburst455.sharepoint.com/sites/DemoSiteForJenkins/_api/Web/GetFolderByServerRelativeUrl(\'/sites/DemoSiteForJenkins/Shared%20Documents/Reports\')/files/add(url=\'extent-report.html\',overwrite=true)" \\
 --header "Authorization: Bearer $access_token" \\
 --header "Accept: application/json;odata=verbose" \\
 --header "Content-Type: application/octet-stream" \\
---data-binary "@/home/nihamathulla/Pictures/test.png"
+--data-binary "@/var/lib/jenkins/workspace/sharePOintDEmo/target/extent-report.html"
 
 '''
          
